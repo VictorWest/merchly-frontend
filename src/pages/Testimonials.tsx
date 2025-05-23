@@ -1,6 +1,6 @@
 "use client"
 import ButtonComponent from "@/components/Button";
-import { getTestimonies, Testimony } from "@/data/testimony";
+import { getTestimonies, Testimony } from "@/data/data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 

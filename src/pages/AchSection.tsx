@@ -1,15 +1,16 @@
 import AchComponent from "@/components/Ach";
 import Image from "next/image";
 
+export const carouselArray = [1, 2, 3, 4, 5]
+
 export default function AchSection(){
-    let carouselArray = [1, 2, 3, 4, 5]
     return(
         <div className="bg-white">
             {/* Trusted Partners */}
             <div className="relative">
                 <h2 className="text-center p-5 text-black font-extrabold">Trusted by</h2>
                 <div className="relative overflow-hidden h-32">
-                    <div className="absolute flex animate-infinite-scroll">
+                    <div className="absolute flex items-center animate-infinite-scroll">
                         {carouselArray.map((item) => (
                             <Image 
                                 key={item}
@@ -20,7 +21,27 @@ export default function AchSection(){
                                 alt={`Image ${item}`}
                             />
                         ))}
-                        {/* Duplicate for seamless looping */}
+                        {/* 3 Duplicates for seamless looping */}
+                        {carouselArray.map((item) => (
+                            <Image 
+                                key={item}
+                                src={`/partners/image${item}.png`} 
+                                className="mx-4"
+                                width={100}
+                                height={100}
+                                alt={`Image ${item}`}
+                            />
+                        ))}
+                        {carouselArray.map((item) => (
+                            <Image 
+                                key={item}
+                                src={`/partners/image${item}.png`} 
+                                className="mx-4"
+                                width={100}
+                                height={100}
+                                alt={`Image ${item}`}
+                            />
+                        ))}
                         {carouselArray.map((item) => (
                             <Image 
                                 key={item}

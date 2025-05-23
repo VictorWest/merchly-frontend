@@ -1,5 +1,4 @@
 import ButtonComponent from "@/components/Button";
-import Image from "next/image";
 
 export default function Footer(){
     return(

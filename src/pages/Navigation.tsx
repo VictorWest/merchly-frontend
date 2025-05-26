@@ -13,7 +13,7 @@ export default function Navigation(){
                 <Link href='/home'>Home</Link>
                 <Link href='/about'>Industries</Link>
                 <div>Company</div>
-                <div>Blog</div>
+                <Link href='/blogs'>Blog</Link>
             </div>
             <ButtonComponent>Merchly Register</ButtonComponent>
         </div>

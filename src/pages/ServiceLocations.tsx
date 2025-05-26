@@ -14,7 +14,7 @@ export default function ServiceLocations(){
                 </ButtonComponent>
             </div>                
             <div className="mt-10 flex items-center justify-between">
-                <div className="">
+                <div>
                     <div className="bg-[#F4F4F5] flex items-center gap-10 px-5 py-1 rounded-full w-fit">
                         <p className="bg-white px-3 py-2 shadow-lg rounded-full">Northeast</p>
                         <p>Midwest</p>

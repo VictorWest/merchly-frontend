@@ -7,8 +7,8 @@ import ProgressBar from "@/components/ProgressBar";
 import SocialMediaIcons from "@/components/SocialMediaIcons";
 import { useState } from "react";
 import ButtonComponent from "@/components/Button"
-import AboutWriter from "./AboutWriter"
 import Link from "next/link"
+import AboutWriter from "./AboutWriter"
 
 export default function BlogDetails({blogDataProp} : {blogDataProp: BlogData}){
     const paragraphs = blogDataProp.content?.split(/(?<=[.?!])\s+(?=[A-Z])/); // sentence split

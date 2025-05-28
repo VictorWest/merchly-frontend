@@ -1,8 +1,8 @@
-import AboutHero from "@/pages/AboutHero";
-import AboutSection from "@/pages/AboutSection";
-import ServiceLocations from "@/pages/ServiceLocations";
-import StorySection from "@/pages/StorySection";
-import TeamSection from "@/pages/TeamSection";
+import AboutHero from "@/pages/AboutPages/AboutHero";
+import AboutSection from "@/pages/AboutPages/AboutSection";
+import ServiceLocations from "@/pages/AboutPages/ServiceLocations";
+import StorySection from "@/pages/AboutPages/StorySection";
+import TeamSection from "@/pages/AboutPages/TeamSection";
 
 export default function AboutPage(){
     return(

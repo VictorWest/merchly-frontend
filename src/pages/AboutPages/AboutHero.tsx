@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { carouselArray } from "./AchSection";
 import Hero from "@/components/Hero";
+import { carouselArray } from "../HomePages/AchSection";
 
 export default function AboutHero(){
     return(

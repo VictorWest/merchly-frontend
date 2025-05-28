@@ -1,8 +1,8 @@
-import AchSection from "@/pages/AchSection";
-import POSWrapper from "@/pages/POSWrapper";
-import LandingHero from "@/pages/LandingHero";
-import ContentWrapper from "@/pages/ContentWrapper";
-import Testimonials from "@/pages/Testimonials";
+import AchSection from "@/pages/HomePages/AchSection";
+import POSWrapper from "@/pages/HomePages/POSWrapper";
+import LandingHero from "@/pages/HomePages/LandingHero";
+import ContentWrapper from "@/pages/HomePages/ContentWrapper";
+import Testimonials from "@/pages/HomePages/Testimonials";
 
 export default function HomePage(){
     return(

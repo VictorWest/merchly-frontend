@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/pages/Navigation";
-import Footer from "@/pages/Footer";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
     weight: '400',

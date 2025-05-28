@@ -1,7 +1,7 @@
 "use client"
 import Hero from "@/components/Hero"
 import { blogData, BlogData } from "@/data/data"
-import BlogDetails from "@/pages/BlogDetails"
+import BlogDetails from "@/pages/BlogPages/BlogDetails"
 import { useParams } from "next/navigation"
 import { useEffect, useState } from "react"
 

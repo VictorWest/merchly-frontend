@@ -1,20 +1,21 @@
 import InfoCard from "@/components/InfoCard";
 import Image from "next/image";
+import * as motion from "motion/react-client"
 
 export default function POSWrapper(){
     return(
       <div className="relative group p-6 rounded-lg bg-black border border-gray-800 overflow-hidden">
         <div className="relative z-10">
           <div className="flex gap-10 items-center text-black px-20 pb-25">
-              <div className="flex flex-col gap-5">
-                  <Image src="/logo-expanded.png" alt="logo" width={100} height={100}/>
-                  <h1 className="font-extrabold text-white text-4xl">Accessible Payment Service and Infrastructure For Everyone</h1>
-                  <p className="pr-15 text-white">Your business needs a payment solution that works for you, not against you. We simplify payments, enabling custom experiences and smooth, steady cash flow.</p>
-              </div>
-              <Image src="/pos.png" alt="Ach" width={500} height={500}/>
+            <motion.div initial={{x:-200}} whileInView={{x:0}} transition={{type:'spring', duration:.7}} className="flex flex-col gap-5">
+                <Image src="/logo-expanded.png" alt="logo" width={100} height={100}/>
+                <h1 className="font-extrabold text-white text-4xl">Accessible Payment Service and Infrastructure For Everyone</h1>
+                <p className="pr-15 text-white">Your business needs a payment solution that works for you, not against you. We simplify payments, enabling custom experiences and smooth, steady cash flow.</p>
+            </motion.div>
+            <Image src="/pos.png" alt="Ach" width={500} height={500}/>
           </div>
-      </div>
-      <div className="flex ml-auto gap-5">
+        </div>
+      <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{type:'spring', duration:3}} className="flex ml-auto gap-5">
         <InfoCard 
           svg={<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#28DC6E"/>
@@ -41,7 +42,7 @@ export default function POSWrapper(){
         header="Opportunities for Communities"
         paragraph="Building local partnerships to strengthen the economy fabrics with business development."
         />
-      </div>
+      </motion.div>
 
       {/* Glowing edge - Top Right */}
       <div className="absolute top-[-20] right-[-20] w-64 h-64 bg-gradient-to-br from-[#3DDF7C] to-transparent opacity-70 blur-[80px]"></div>

@@ -3,6 +3,13 @@ import ButtonComponent from "@/components/Button";
 import { getTestimonies, Testimony } from "@/data/data";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import * as motion from "motion/react-client"
+import dynamic from 'next/dynamic';
+
+const AnimatePresence = dynamic(
+  () => import('framer-motion').then((mod) => mod.AnimatePresence),
+  { ssr: false }
+);
 
 export default function Testimonials(){
     const [ page, setPage ] = useState(1)
@@ -18,7 +25,7 @@ export default function Testimonials(){
 
         const interval = setInterval(() => {
             setPage((prev) => prev >= data.length ? 1 : prev + 1)
-        }, 10000)
+        }, 3000)
 
         return () => clearInterval(interval)
     }, [data.length])
@@ -44,17 +51,51 @@ export default function Testimonials(){
                 </div>                
             </header>
 
-            {data.length !== 0 && <main className="flex gap-5 mt-20 items-start w-4/5 mx-auto">
-                <p className="text-9xl font-extrabold">“</p>
+
+            {data.length !== 0 && (
+            <AnimatePresence mode="wait">
+                <motion.main
+                key={page} 
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: -100, opacity: 0 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="flex gap-5 mt-20 items-start w-4/5 mx-auto"
+                >
+                <p className="text-9xl font-extrabold">"</p>
+                
                 <div className="ml-10 flex flex-col gap-5">
-                    <Image className="rounded-full" src={data[page - 1].imageUrl} alt={data[page - 1].name} width={100} height={100} />
+                    <motion.div
+                    initial={{ scale: 0.9 }}
+                    animate={{ scale: 1 }}
+                    transition={{ delay: 0.2 }}
+                    >
+                    <Image 
+                        className="rounded-full" 
+                        src={data[page - 1].imageUrl} 
+                        alt={data[page - 1].name} 
+                        width={100} 
+                        height={100} 
+                    />
+                    </motion.div>
+                    
                     <div>
-                        <h2 className="text-3xl font-extrabold">{data[page - 1].name}</h2>
-                        <p>-{data[page - 1].occupation}</p>                          
-                    </div>  
+                    <h2 className="text-3xl font-extrabold">{data[page - 1].name}</h2>
+                    <p>-{data[page - 1].occupation}</p>
+                    </div>
                 </div>
-                <p className="ml-auto w-[60%]">{data[page - 1].review}</p>
-            </main>}
+                
+                <motion.p 
+                    className="ml-auto w-[60%]"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.3 }}
+                >
+                    {data[page - 1].review}
+                </motion.p>
+                </motion.main>
+            </AnimatePresence>
+            )}
         </div>
     )
 }

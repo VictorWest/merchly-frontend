@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { useState } from "react";
+import { AnimatePresence, motion } from "motion/react"
 
 export default function ContentWrapper(){
     const [isClicked, setIsClicked] = useState(1)
@@ -12,7 +13,9 @@ export default function ContentWrapper(){
                 <h2 className="text-3xl font-bold w-3/5">This is how we help you grow your business.</h2>
             </header>
             <div className="flex gap-20">
-                <Image src={`/content-wrapper/cw-${isClicked}.png`} alt="cw-1" width={400} height={420} className="shadow-md rounded-xl"/>
+                <AnimatePresence mode="popLayout">
+                    <motion.div key={`cw-${isClicked}`}  initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -100, opacity: 0 }} transition={{ duration: 0.4, ease: "easeInOut" }} className="w-1/2"><Image src={`/content-wrapper/cw-${isClicked}.png`} alt="cw-1" width={400} height={420} className="object-contain shadow-md rounded-xl w-full h-full"/></motion.div>
+                </AnimatePresence>
                 <div className="flex flex-col justify-center gap-10">
                     <div className="space-y-5 cursor-pointer" onClick={() => setIsClicked(1)}>
                         <h5 className="font-bold text-xl">Book a call</h5>

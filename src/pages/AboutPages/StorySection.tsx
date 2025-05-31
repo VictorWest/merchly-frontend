@@ -19,8 +19,6 @@ export default function StorySection(){
             setPage((prev) => prev >= data.length ? 1 : prev + 1)
         }, 10000)
 
-        console.log(data)
-
         return () => clearInterval(interval)
     }, [data.length])
 

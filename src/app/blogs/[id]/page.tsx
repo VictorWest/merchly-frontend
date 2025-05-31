@@ -17,7 +17,7 @@ export default function BlogPage(){
 
     useEffect(() => {
         handleBlogDataState()
-    }, [blogData])
+    }, [params?.id])
 
     return(
         <div>

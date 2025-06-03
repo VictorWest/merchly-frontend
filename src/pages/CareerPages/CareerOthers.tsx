@@ -19,7 +19,7 @@ export default function CareerOthers({careerData}:{careerData:Position}){
             <h2 className="text-3xl font-extrabold pb-10">Find Another Opportunity</h2>
             <div className="flex gap-5 justify-center mb-10">
                 <div className="flex justify-between items-center border-1 border-stone-300 rounded-lg w-2/3 px-2 bg-white">
-                    <input className="border-0 p-2 outline-0 w-full" type="text" name="search" value={searchInput} onChange={(e) => setSearchInput(e.target.value?.toLowerCase())} autoFocus autoComplete="true" placeholder="Type something here"/>
+                    <input className="border-0 p-2 outline-0 w-full" type="text" name="search" value={searchInput} onChange={(e) => setSearchInput(e.target.value?.toLowerCase())} autoComplete="true" placeholder="Type something here"/>
                     <span onClick={handleSearchChange} className="cursor-pointer"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 1.5C3.51472 1.5 1.5 3.51472 1.5 6C1.5 8.48528 3.51472 10.5 6 10.5C7.24278 10.5 8.36709 9.99687 9.18198 9.18198C9.99687 8.36709 10.5 7.24278 10.5 6C10.5 3.51472 8.48528 1.5 6 1.5ZM0.5 6C0.5 2.96243 2.96243 0.5 6 0.5C9.03757 0.5 11.5 2.96243 11.5 6C11.5 7.33855 11.0213 8.56604 10.2266 9.51951L13.3536 12.6464C13.5488 12.8417 13.5488 13.1583 13.3536 13.3536C13.1583 13.5488 12.8417 13.5488 12.6464 13.3536L9.51951 10.2266C8.56604 11.0213 7.33855 11.5 6 11.5C2.96243 11.5 0.5 9.03757 0.5 6Z" fill="#7F7F81"/></svg></span>
                 </div>   
                 <div className="*:flex *:items-center *:bg-white *:p-2 *:rounded-md *:shadow-md *:text-sm *:gap-2 flex gap-5">

@@ -1,12 +1,13 @@
 import InfoCard from "@/components/InfoCard";
 import Image from "next/image";
-
+import * as motion from "motion/react-client"
+import TypingEffect from "@/components/transitions/TypingEffect";
 export default function ServicesPriority(){
     return(
         <div className="">
             <div className="w-full relative p-20 space-y-10 text-center rounded-lg bg-black border border-gray-800 overflow-hidden bg-[url('/grid.png')] bg-contain">
                 <Image src='/logo-expanded.png' alt="logo" width={100} height={100} className="mx-auto" />
-                <h2 className="text-3xl font-extrabold">Your Financial Goals are Our Priority</h2>
+                <h2 className="text-3xl font-extrabold"><TypingEffect text="Your Financial Goals are Our Priority."/><motion.span  animate={{ opacity: [0, 1] }}  transition={{ repeat: Infinity, duration: 0.6 }}  className="inline-block">  |</motion.span></h2>
                 <p className="w-1/2 mx-auto">At Merchly Io, our merchant services provice the tools and support your business needs to accept payments when running your business.</p>
                 <div className="flex justify-center items-center gap-10 *:bg-gradient-to-b *:from-[#28DC6E66]/70 *:to-[#28DC6E66]/100 *:rounded-md *:flex *:justify-start *:items-center *:w-fit text-sm font-bold">
                     <div>

@@ -1,17 +1,15 @@
-"use client"
 import Hero from "@/components/Hero";
 import JoinUs from "@/components/JoinUs";
 import Image from "next/image";
-import { useEffect } from "react";
+import * as motion from "motion/react-client"
 
 export default function CareerHero(){
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
     return(
         <div>
             <Hero header="Career" paragraph="Let’s join our flexible environment, helping you to achieve your best working experience with your creative ideas.">
-                <Image src="/career-story/image.png" alt="Career" width={1000} height={1000} className="w-2/3 rounded-t-4xl object-cover mx-auto z-10" />
+                <motion.div initial={{y:400,opacity:0}} animate={{y:0, opacity:1}} transition={{duration:1}}>
+                    <Image src="/career-story/image.png" alt="Career" width={1000} height={1000} className="w-2/3 rounded-t-4xl object-cover mx-auto z-10" />
+                </motion.div>
             </Hero>
             <div className="bg-white text-black p-20">
                 <div className="flex *:w-1/2">

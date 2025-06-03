@@ -1,15 +1,16 @@
 import Image from "next/image";
+import * as motion from "motion/react-client"
 
 export default function AboutSection(){
     return(
         <div className="bg-white p-20">
-            <div className="flex flex-col w-full items-center mx-auto">
+            <motion.div initial={{y:-100}} whileInView={{y:0}} transition={{duration: .3}} className="flex flex-col w-full items-center mx-auto">
                 <Image src="/about-container.png" alt="Cafe" width={1000} height={1000} className="w-full rounded-t-4xl object-cover" />
-                <div className="relative pb-10 bg-[#2A2A2D] w-full rounded-b-4xl"> 
+                <div style={{background: "radial-gradient(ellipse at bottom, #08311A, #000)"}}  className="relative pb-10 bg-[#2A2A2D] w-full rounded-b-4xl"> 
                     <div className="text-center flex items-center justify-between p-10 bg-[url('/grid.png')] bg-cover">
                         <div className="text-start space-y-15">
-                            <h2 className="text-3xl font-extrabold">Why do we exist?</h2>
-                            <div className="bg-gradient-to-b from-[#28DC6E66]/70 to-[#28DC6E66]/40 rounded-2xl p-5 flex gap-5 items-center *:space-y-5">
+                            <motion.h2 initial={{x:-300, opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:.5}} className="text-3xl font-extrabold">Why do we exist?</motion.h2>
+                            <motion.div initial={{opacity:0, scaleY:3}} whileInView={{opacity:1, scaleY:1}} transition={{duration:.5}} className="bg-gradient-to-b from-[#28DC6E66]/70 to-[#28DC6E66]/40 rounded-2xl p-5 flex gap-5 items-center *:space-y-5">
                                 <ul className="space-y-2">
                                     <li className="flex justify-between items-baseline gap-7">
                                         <span className="text-xl font-extrabold text-start">$182M</span>
@@ -24,18 +25,17 @@ export default function AboutSection(){
                                         <span className="text-sm text-end">Global team members</span>
                                     </li>
                                 </ul>
-                            </div>
+                            </motion.div>
                         </div>
-                        <div className="space-y-5 w-1/2 text-start">
+                        <motion.div initial={{opacity:0, y:100}} whileInView={{opacity:1, y:0}} transition={{duration:.5}} className="space-y-5 w-1/2 text-start">
                             <p>We built a payment platform that prioritizes what truly matters, partnerships, trust, and long-term success.</p>
                             <p>Most payment processors focus on fees and features. But what about you?</p>
                             <p>We're changing the game by putting your business first with our customized payment solutions which don’t just process transactions, but they fuel your growth and help you thrive in any market.</p>
                             <p>We don't just power payments. We power your business.</p>
-                        </div>
+                        </motion.div>
                     </div>
-                    <div className="absolute bottom-0 left-0 right-0 rounded-b-4xl h-1/3 bg-gradient-to-t from-[#21C963] to-transparent opacity-30"></div>
                 </div>            
-            </div>
+            </motion.div>
 
             {/* Our Values */}
             <section className="my-20 text-black">

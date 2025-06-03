@@ -1,9 +1,17 @@
 import FAQ from "@/components/FAQ";
+import * as motion from "motion/react-client"
 
 export default function ServicesFAQ(){
     return(
         <div className="bg-white p-20 text-black text-center space-y-7">
-            <p className="font-bold text-[#21C963]">Frequently Asked Questions</p>
+            <motion.p
+                whileInView={{
+                    x: [0, -10, 8, -6, 10, -8, 6, 0],
+                    y: [0, 5, -7, 8, -4, 6, -5, 0],
+                }}
+                transition={{duration:6}}
+            className="font-bold text-[#21C963]"> Frequently Asked Questions</motion.p>
+            
             <div className="w-2/3 mx-auto space-y-7">
                 <h2 className="text-4xl font-extrabold">Explore Questions We've Already Covered</h2>
                 <p className="">Still have questions? Don’t hesitate to reach out. We focus on win-win solutions, not just selling a service. That’s why we’re happy to answer your questions first—so you can decide if we’re the right fit for you.</p>

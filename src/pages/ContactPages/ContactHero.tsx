@@ -4,6 +4,7 @@ import ContactInfo from "@/components/ContactInfo";
 import Input from "@/components/Input";
 import { contactDetails } from "@/data/data";
 import { useState } from "react";
+import * as motion from "motion/react-client"
 
 interface FormData{
   name: string,
@@ -19,13 +20,15 @@ export default function ContactHero() {
 
   return(
     <div>
-      <div className="pt-30 pb-20 px-20 bg-[#2A2A2D] bg-[url('/grid.png')] bg-cover relative">
-        <div className="z-10 w-1/2 space-y-5 mt-10">
-          <h1 className="text-4xl font-extrabold">Contact</h1>
-          <p>We'd love to hear from you! Whether you have a question, need support, or want to explore, contact us.</p>
-        </div>
-          <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#21C963] to-transparent opacity-30"></div>
+      <div style={{background:"radial-gradient(ellipse at top, #106B38, #08311A, #000)"}}>
+        <div className="bg-[url('/grid.png')] bg-cover relative">
+          <motion.div initial={{ opacity:0, x:-100 }} animate={{ opacity:1, x:0 }} transition={{duration: .5}} className="z-10 w-1/2 space-y-5 mt-10">
+            <h1 className="text-4xl font-extrabold">Contact</h1>
+            <p>We'd love to hear from you! Whether you have a question, need support, or want to explore, contact us.</p>
+          </motion.div>
+        </div>        
       </div>
+
       <div className="bg-white text-black flex justify-between gap-10 p-20">
           <div className="w-1/2 flex flex-col justify-between">
             <div className="space-y-7">

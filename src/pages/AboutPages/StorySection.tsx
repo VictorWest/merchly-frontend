@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { getClientStories, Testimony } from "@/data/data";
 import { useEffect, useState } from "react";
+import { motion } from "motion/react"
 
 export default function StorySection(){
     const [ page, setPage ] = useState(1)
@@ -44,7 +45,7 @@ export default function StorySection(){
                 </div>
             </div>
 
-            <div className="bg-gradient-to-b from-[#28DC6E66]/70 to-[#28DC6E66]/40 rounded-2xl p-10 mt-10 space-y-10">
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} className="bg-gradient-to-b from-[#28DC6E66]/70 to-[#28DC6E66]/40 rounded-2xl p-10 mt-10 space-y-10">
                 <div className="flex w-full justify-between text-2xl font-extrabold">
                     <h2>Client Story</h2>
                     <h2 className=""><svg width="41" height="35" viewBox="0 0 41 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.72 34.3982V23.5182C23.72 17.2888 25.1707 12.1688 28.072 8.15816C31.0587 4.06217 35.368 1.41683 41 0.222168V7.26217C38.2694 7.94484 36.136 9.22484 34.6 11.1022C33.064 12.8942 32.1254 15.1128 31.784 17.7582H38.44V34.3982H23.72ZM0.0400391 34.3982V23.5182C0.0400391 17.2888 1.49071 12.1688 4.39204 8.15816C7.37871 4.06217 11.688 1.41683 17.32 0.222168V7.26217C14.5894 7.94484 12.456 9.22484 10.92 11.1022C9.38404 12.8942 8.44537 15.1128 8.10404 17.7582H14.76V34.3982H0.0400391Z" fill="white"/></svg></h2>
@@ -59,7 +60,7 @@ export default function StorySection(){
                     </div>
                     <div className="w-1/2">"{data[page - 1].review}"</div>
                 </div>}
-            </div>
+            </motion.div>
             
             {/* Glowing edge - Top Right */}
             <div className="absolute top-[-20] right-[-20] w-64 h-64 bg-gradient-to-br from-[#3DDF7C] to-transparent opacity-70 blur-[80px]"></div>

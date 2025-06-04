@@ -12,11 +12,11 @@ export default function LandingHero(){
     return () => clearTimeout(timeout);
     }, []);
     return(
-        <div style={{background: "radial-gradient(ellipse at bottom, #106B38, #08311A, #04100C, #000)"}} className="pt-40">
+        <div style={{background: "radial-gradient(ellipse at bottom, #106B38, #08311A, #04100C, #000)"}} className="pt-30 md:pt-40">
             <div className="relative pb-10"> 
                 <motion.div initial={{x:-300, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.5}} className="text-center space-y-7 flex flex-col justify-center bg-[url('/grid.png')] bg-cover">
-                    <h1 className="text-4xl font-extrabold w-2/5 mx-auto">Simplified payment solution with customized experience</h1>
-                    <p className="text-sm w-2/5 mx-auto">Revolutionizing payment processing for small businesses in the U.S with customized payment services & infrastructure according your business needs</p>
+                    <h1 className="text-lg md:text-4xl font-extrabold w-4/5 md:w-2/5 mx-auto">Simplified payment solution with customized experience</h1>
+                    <p className="text-sm w-4/5 md:w-2/5 mx-auto">Revolutionizing payment processing for small businesses in the U.S with customized payment services & infrastructure according your business needs</p>
                     <div className="text-xs flex justify-center gap-3 *:flex *:w-fit *:items-center *:gap-1">
                         <p><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.75 18.75C8.21719 18.75 13.5136 19.4812 18.5468 20.8512C19.2738 21.0491 20 20.5086 20 19.7551V18.75M4.25 4.5V5.25C4.25 5.66421 3.91421 6 3.5 6H2.75M2.75 6V5.625C2.75 5.00368 3.25368 4.5 3.875 4.5H20.75M2.75 6V15M20.75 4.5V5.25C20.75 5.66421 21.0858 6 21.5 6H22.25M20.75 4.5H21.125C21.7463 4.5 22.25 5.00368 22.25 5.625V15.375C22.25 15.9963 21.7463 16.5 21.125 16.5H20.75M22.25 15H21.5C21.0858 15 20.75 15.3358 20.75 15.75V16.5M20.75 16.5H4.25M4.25 16.5H3.875C3.25368 16.5 2.75 15.9963 2.75 15.375V15M4.25 16.5V15.75C4.25 15.3358 3.91421 15 3.5 15H2.75M15.5 10.5C15.5 12.1569 14.1569 13.5 12.5 13.5C10.8431 13.5 9.5 12.1569 9.5 10.5C9.5 8.84315 10.8431 7.5 12.5 7.5C14.1569 7.5 15.5 8.84315 15.5 10.5ZM18.5 10.5H18.5075V10.5075H18.5V10.5ZM6.5 10.5H6.5075V10.5075H6.5V10.5Z" stroke="#3DDF7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             <span>Customized Payment Experience</span></p>

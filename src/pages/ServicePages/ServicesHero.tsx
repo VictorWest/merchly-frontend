@@ -8,31 +8,31 @@ export default function ServicesHero(){
     return(
         <div>
             <div style={{background: "radial-gradient(circle at right center, #106B38, #08311A, #04100C, #000)"}}>
-                <div className="bg-[url('/grid.png')] bg-cover relative pt-40 py-30">
-                    <div className="flex h-full items-center gap-20 pl-20 pr-10"> 
-                        <motion.main initial={{x:-300, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.9}} className="text-start space-y-7 flex flex-col">
-                            <h1 className="text-5xl font-extrabold ">Merchant Services</h1>
-                            <p className="text-lg">Merchly Io provide you a simplified, enhanced, and personalized merchant services payment for you.</p>
-                            <ButtonComponent className="w-fit text-sm">Get a free quote</ButtonComponent>
+                <div className="bg-[url('/grid.png')] bg-cover relative py-20 pt-40 md:py-40 px-10">
+                    <div className="flex h-full items-center justify-center gap-20 md:pl-20 md:pr-10"> 
+                        <motion.main initial={{x:-300, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.9}} className="text-start space-y-7 flex flex-col items-center md:items-start">
+                            <h1 className="text-4xl md:text-5xl font-extrabold text-center md:text-start">Merchant Services</h1>
+                            <p className="text-sm md:text-lg text-center md:text-start">Merchly Io provide you a simplified, enhanced, and personalized merchant services payment for you.</p>
+                            <ButtonComponent className="w-fit text-xs md:text-sm">Get a free quote</ButtonComponent>
                         </motion.main>
-                        <motion.div initial={{x:300, y:300, opacity:0}} animate={{x:0, y:0, opacity:1}} transition={{duration:.9}}>
+                        <motion.div initial={{x:300, y:300, opacity:0}} animate={{x:0, y:0, opacity:1}} transition={{duration:.9}} className="hidden md:block">
                             <Image src="/card.png" alt="Merchly Card" width={500} height={500} />
                         </motion.div>
                     </div>
                 </div>  
             </div>
             
-            <div className="bg-[#F4F4F5] text-black p-20 space-y-5">
+            <div className="bg-[#F4F4F5] text-black p-10 md:p-20 space-y-5">
                 <SlideUp inView>
-                    <p className="text-[#21C963] font-bold">Merchant Service Payment</p>
-                    <div className="flex justify-between">
-                        <div className="text-3xl font-extrabold w-1/2">
+                    <p className="text-[#21C963] font-bold text-lg md:text-base text-center md:text-start mb-5 md:mb-0">Merchant Service Payment</p>
+                    <div className="flex flex-col md:flex-row text-center md:text-start justify-between gap-5 md:gap-0">
+                        <div className="text-xl md:text-3xl font-extrabold md:w-1/2">
                             <h3>We handle all the payment</h3>
                             <h3>You grow your business!</h3>
                         </div>
-                        <p className="w-1/2">At Merchly Io, we're redefining the way small businesses handle transactions. Our Merchant Services are designed to simplify and enhance your payment processing experience, ensuring that your business thrives in today's dynamic market.</p>
+                        <p className="text-sm md:text-base md:w-1/2">At Merchly Io, we're redefining the way small businesses handle transactions. Our Merchant Services are designed to simplify and enhance your payment processing experience, ensuring that your business thrives in today's dynamic market.</p>
                     </div>
-                    <div className="flex gap-5 mt-15 items-center w-fit text-black *:bg-gradient-to-b *:from-white *:to-white *:border *:border-gray-300">
+                    <div className="flex flex-col md:flex-row gap-5 mt-15 items-center w-fit text-black *:bg-gradient-to-b *:from-white *:to-white *:border *:border-gray-300">
                         <InfoCard
                             svg={<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="24" fill="#279689"/><path d="M26 36.0001V26.0001C26 25.4478 26.4477 25.0001 27 25.0001H31C31.5523 25.0001 32 25.4478 32 26.0001V36.0001M26 36.0001H11.1478M26 36.0001H32M32 36.0001H36.8522M35 36.0001V20.4651M13 36.0001V20.4654M13 20.4654C14.5297 21.3496 16.5197 21.1373 17.8284 19.8286C17.8879 19.7691 17.9451 19.7082 18.0001 19.646C18.7331 20.4764 19.8054 21.0001 21 21.0001C22.1947 21.0001 23.2671 20.4763 24 19.6459C24.7329 20.4763 25.8053 21.0001 27 21.0001C28.1946 21.0001 29.2668 20.4764 29.9998 19.6462C30.0546 19.7083 30.1118 19.7691 30.1712 19.8285C31.48 21.1373 33.4702 21.3495 35 20.4651M13 20.4654C12.7038 20.2942 12.4249 20.082 12.1716 19.8286C10.6095 18.2665 10.6095 15.7338 12.1716 14.1717L13.7573 12.586C14.1324 12.211 14.6411 12.0002 15.1715 12.0002H32.8282C33.3587 12.0002 33.8674 12.211 34.2425 12.586L35.8281 14.1716C37.3902 15.7337 37.3902 18.2664 35.8281 19.8285C35.5748 20.0817 35.296 20.2939 35 20.4651M17 32.0001H22C22.5523 32.0001 23 31.5523 23 31.0001V26.0001C23 25.4478 22.5523 25.0001 22 25.0001H17C16.4477 25.0001 16 25.4478 16 26.0001V31.0001C16 31.5523 16.4477 32.0001 17 32.0001Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>}
                             header="Powering Merchant"

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function BlogCard({category, date, title, coverImage, author, authorImage, id} : {category: 'Agency Collection' | 'Financial' | 'Payment' | 'Tips', date: string | number, title: string, coverImage: string, author: string, authorImage: string, id: string}){
     return(
-        <Link href={`/blogs/${id}`} className="w-[30%] space-y-3 text-sm">
+        <Link href={`/blogs/${id}`} className="md:w-[30%] space-y-3 text-xs md:text-sm">
             <div className="w-full overflow-hidden rounded-md">
                 <Image src={coverImage} alt={`Image ${id}`} width={400} height={160} className="w-full h-full object-contain transform transition-transform duration-300 hover:scale-110" />
             </div>
@@ -12,7 +12,7 @@ export default function BlogCard({category, date, title, coverImage, author, aut
                 <p className="bg-[#F4F4F5] p-2 rounded-lg">{category}</p>
                 <p>{date}</p>
             </div>
-            <h5 className="font-bold w-4/5 hover:text-[#21C963]">{title}</h5>
+            <h5 className="font-bold md:w-4/5 hover:text-[#21C963] text-center md:text-start px-5 md:px-0 text-sm">{title}</h5>
             <div className="flex justify-between items-center">
                 <div className="flex gap-3 items-center">
                     <Image src={authorImage} alt="Scott" width={50} height={50} className="rounded-full" />

@@ -2,25 +2,26 @@ import InfoCard from "@/components/InfoCard";
 import Image from "next/image";
 import * as motion from "motion/react-client"
 import TypingEffect from "@/components/transitions/TypingEffect";
+import SlideUp from "@/components/transitions/SlideUp";
 export default function ServicesPriority(){
     return(
-        <div className="">
-            <div className="w-full relative p-20 space-y-10 text-center rounded-lg bg-black border border-gray-800 overflow-hidden bg-[url('/grid.png')] bg-contain">
+        <div>
+            <div className="w-full relative p-10 md:p-20 space-y-10 text-center rounded-lg bg-black border border-gray-800 overflow-hidden bg-[url('/grid.png')] bg-contain">
                 <Image src='/logo-expanded.png' alt="logo" width={100} height={100} className="mx-auto" />
-                <h2 className="text-3xl font-extrabold"><TypingEffect text="Your Financial Goals are Our Priority."/><motion.span  animate={{ opacity: [0, 1] }}  transition={{ repeat: Infinity, duration: 0.6 }}  className="inline-block">  |</motion.span></h2>
-                <p className="w-1/2 mx-auto">At Merchly Io, our merchant services provice the tools and support your business needs to accept payments when running your business.</p>
-                <div className="flex justify-center items-center gap-10 *:bg-gradient-to-b *:from-[#28DC6E66]/70 *:to-[#28DC6E66]/100 *:rounded-md *:flex *:justify-start *:items-center *:w-fit text-sm font-bold">
+                <h2 className="text-2xl md:text-3xl font-extrabold"><TypingEffect text="Your Financial Goals are Our Priority."/><motion.span  animate={{ opacity: [0, 1] }}  transition={{ repeat: Infinity, duration: 0.6 }}  className="inline-block">  |</motion.span></h2>
+                <p className="md:w-1/2 mx-auto text-sm md:text-base">At Merchly Io, our merchant services provice the tools and support your business needs to accept payments when running your business.</p>
+                <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10 *:bg-gradient-to-b *:from-[#28DC6E66]/70 *:to-[#28DC6E66]/100 *:rounded-md *:flex *:justify-center md:*:justify-start *:items-center *:w-full text-sm font-bold">
                     <div>
                         <span><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28 23L24 19M24 19L20 23M24 19L24 29M36 24C36 30.6274 30.6274 36 24 36C17.3726 36 12 30.6274 12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                        <h3 className="pr-20">Enhanced for you</h3>
+                        <h3 className="md:pr-20">Enhanced for you</h3>
                     </div>   
                     <div>
                         <span><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 25L23 28L28 21M36 24C36 30.6274 30.6274 36 24 36C17.3726 36 12 30.6274 12 24C12 17.3726 17.3726 12 24 12C30.6274 12 36 17.3726 36 24Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                        <h3 className="pr-20">Simplified for you</h3>
+                        <h3 className="md:pr-20">Simplified for you</h3>
                     </div>        
                     <div>
                         <span><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.9754 32.9664C30.1495 30.5566 27.2565 29 24 29C20.7435 29 17.8505 30.5566 16.0246 32.9664M31.9754 32.9664C34.4447 30.7685 36 27.5659 36 24C36 17.3726 30.6274 12 24 12C17.3726 12 12 17.3726 12 24C12 27.5659 13.5553 30.7685 16.0246 32.9664M31.9754 32.9664C29.8553 34.8535 27.0616 36 24 36C20.9384 36 18.1447 34.8535 16.0246 32.9664M28 21C28 23.2091 26.2091 25 24 25C21.7909 25 20 23.2091 20 21C20 18.7909 21.7909 17 24 17C26.2091 17 28 18.7909 28 21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                        <h3 className="pr-20">Personalized for you</h3>
+                        <h3 className="md:pr-20">Personalized for you</h3>
                     </div>           
                 </div>
 
@@ -30,14 +31,14 @@ export default function ServicesPriority(){
                 {/* Glowing edge - Bottom Left */}
                 <div className="absolute bottom-0 left-0 w-32 h-64 bg-gradient-to-tl from-[#3DDF7C] to-transparent opacity-70 blur-[80px]"></div>
             </div>     
-            <div className="bg-[#F4F4F5] p-20 text-black space-y-4 flex justify-between">
-                <div className="w-1/2 space-y-5 sticky top-30 self-start">
-                    <p className="text-[#21C963] font-extrabold">Merchant Service Payment</p>
-                    <div className="text-3xl font-extrabold">
+            <div className="bg-[#F4F4F5] p-10 md:p-20 text-black space-y-4 flex flex-col md:flex-row justify-between text-center md:text-start">
+                <div className="md:w-1/2 space-y-5 md:sticky md:top-30 self-start">
+                    <p className="text-[#21C963] text-lg md:text-base font-extrabold">Merchant Service Payment</p>
+                    <div className="text-xl md:text-3xl font-extrabold">
                         <h3>We handle all the payment</h3>
                         <h3>You grow your business!</h3>
                     </div>        
-                    <ul className="*:flex *:items-center *:gap-3 *:font-bold space-y-5">
+                    <ul className="*:flex *:flex-col *:md:flex-row *:items-center *:gap-3 *:font-bold space-y-5 text-xs md:text-base mb-10 md:mb-0">
                         <li>
                             <span><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 17L15 20L20 13M28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z" stroke="#21C963" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                             <p>Tailored for Startups and Growing Businesses</p>
@@ -52,7 +53,7 @@ export default function ServicesPriority(){
                         </li>
                     </ul>            
                 </div>
-                <div className="w-1/2 flex flex-col gap-10 *:bg-gradient-to-b *:from-white *:to-white *:border *:border-gray-300 *:shadow-lg">
+                <div className="md:w-1/2 flex flex-col text-start gap-10 *:bg-gradient-to-b *:from-white *:to-white *:border *:border-gray-300 *:shadow-lg">
                     <InfoCard
                         svg={<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="24" fill="#279689"/><path d="M26 36.0001V26.0001C26 25.4478 26.4477 25.0001 27 25.0001H31C31.5523 25.0001 32 25.4478 32 26.0001V36.0001M26 36.0001H11.1478M26 36.0001H32M32 36.0001H36.8522M35 36.0001V20.4651M13 36.0001V20.4654M13 20.4654C14.5297 21.3496 16.5197 21.1373 17.8284 19.8286C17.8879 19.7691 17.9451 19.7082 18.0001 19.646C18.7331 20.4764 19.8054 21.0001 21 21.0001C22.1947 21.0001 23.2671 20.4763 24 19.6459C24.7329 20.4763 25.8053 21.0001 27 21.0001C28.1946 21.0001 29.2668 20.4764 29.9998 19.6462C30.0546 19.7083 30.1118 19.7691 30.1712 19.8285C31.48 21.1373 33.4702 21.3495 35 20.4651M13 20.4654C12.7038 20.2942 12.4249 20.082 12.1716 19.8286C10.6095 18.2665 10.6095 15.7338 12.1716 14.1717L13.7573 12.586C14.1324 12.211 14.6411 12.0002 15.1715 12.0002H32.8282C33.3587 12.0002 33.8674 12.211 34.2425 12.586L35.8281 14.1716C37.3902 15.7337 37.3902 18.2664 35.8281 19.8285C35.5748 20.0817 35.296 20.2939 35 20.4651M17 32.0001H22C22.5523 32.0001 23 31.5523 23 31.0001V26.0001C23 25.4478 22.5523 25.0001 22 25.0001H17C16.4477 25.0001 16 25.4478 16 26.0001V31.0001C16 31.5523 16.4477 32.0001 17 32.0001Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>}
                         header="Startup-Choice Solutions"

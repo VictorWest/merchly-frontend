@@ -87,7 +87,7 @@ export const posts: BlogData[] = [
         "tableOfContent": []
     }, 
     {
-        "title": "Here are 7 reason why you need to use ACH",
+        "title": "Here are 7 reasons why you need to use ACH",
         "id": "4",
         "date": "Mar 31 2025",
         "coverImage": "/blogs/image4.png",

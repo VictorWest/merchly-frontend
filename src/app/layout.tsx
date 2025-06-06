@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/transitions/ScrollToTop";
 
 const poppins = Poppins({
     weight: '400',
@@ -34,7 +35,8 @@ export default function RootLayout({
       <body
         className={`${poppins.className} antialiased`}
       >
-        <Navigation />
+        <ScrollToTop />
+        <Navigation key={"nav"} />
         {children}
         <Footer />
       </body>

@@ -4,18 +4,18 @@ import * as motion from "motion/react-client"
 
 export default function POSWrapper(){
     return(
-      <div className="relative group p-6 rounded-lg bg-black border border-gray-800 overflow-hidden">
+      <div className="relative group p-6 pb-10 rounded-lg bg-black border border-gray-800 overflow-hidden">
         <div className="relative z-10">
-          <div className="flex gap-10 items-center text-black px-20 pb-25">
-            <motion.div initial={{x:-200}} whileInView={{x:0}} transition={{type:'spring', duration:.7}} className="flex flex-col gap-5">
-                <Image src="/logo-expanded.png" alt="logo" width={100} height={100}/>
-                <h1 className="font-extrabold text-white text-4xl">Accessible Payment Service and Infrastructure For Everyone</h1>
-                <p className="pr-15 text-white">Your business needs a payment solution that works for you, not against you. We simplify payments, enabling custom experiences and smooth, steady cash flow.</p>
+          <div className="flex flex-col md:flex-row text-center md:text-start gap-10 items-center text-black md:px-20 md:pb-25">
+            <motion.div initial={{x:-200}} whileInView={{x:0}} transition={{type:'spring', duration:1}} className="flex flex-col gap-10 md:gap-5 px-5 md:px-0">
+                <div className="mx-auto md:m-0"><Image src="/logo-expanded.png" alt="logo" width={100} height={100}/></div>
+                <h1 className="font-extrabold text-white text-2xl md:text-4xl">Accessible Payment Service and Infrastructure For Everyone</h1>
+                <p className="md:pr-15 text-white text-sm md:text-base">Your business needs a payment solution that works for you, not against you. We simplify payments, enabling custom experiences and smooth, steady cash flow.</p>
             </motion.div>
-            <Image src="/pos.png" alt="Ach" width={500} height={500}/>
+            <Image className="p-10 md:p-0" src="/pos.png" alt="Ach" width={500} height={500}/>
           </div>
         </div>
-      <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{type:'spring', duration:3}} className="flex ml-auto gap-5">
+      <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{type:'spring', duration:3}} className="flex flex-col md:flex-row ml-auto gap-15 md:gap-5 *:items-center *:md:items-start *:text-center *:md:text-start px-10 md:px-0 text-sm md:text-base">
         <InfoCard 
           svg={<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#28DC6E"/>

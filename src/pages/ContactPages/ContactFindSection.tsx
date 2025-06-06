@@ -3,13 +3,13 @@ import GoogleMaps from "@/components/GoogleMaps";
 
 export default function ContactFindSection(){
     return(
-        <div className="bg-[#F4F4F5] text-black flex justify-between gap-10 p-20">
-            <div className="w-1/2 flex flex-col justify-between">
+        <div className="bg-[#F4F4F5] text-black flex flex-col md:flex-row justify-between gap-10 p-10 md:p-20">
+            <div className="md:w-1/2 flex flex-col justify-between gap-10 md:gap-0">
                 <div className="space-y-7">
-                    <h3 className="text-4xl font-bold">Find Us</h3>
-                    <p>Get to know more about us by stay updated with our social media or just come to our location to have a good discussion with us!</p>
+                    <h3 className="text-2xl md:text-4xl font-bold">Find Us</h3>
+                    <p className="text-sm md:text-base">Get to know more about us by stay updated with our social media or just come to our location to have a good discussion with us!</p>
                 </div>
-                <div className="space-y-5">
+                <div className="space-y-5 w-fit md:w-full">
                     <ContactInfo 
                         svg={<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#44ABA0"/><g clip-path="url(#clip0_1086_9206)"><path d="M30.2234 8H9.77187C8.79219 8 8 8.77344 8 9.72969V30.2656C8 31.2219 8.79219 32 9.77187 32H30.2234C31.2031 32 32 31.2219 32 30.2703V9.72969C32 8.77344 31.2031 8 30.2234 8ZM15.1203 28.4516H11.5578V16.9953H15.1203V28.4516ZM13.3391 15.4344C12.1953 15.4344 11.2719 14.5109 11.2719 13.3719C11.2719 12.2328 12.1953 11.3094 13.3391 11.3094C14.4781 11.3094 15.4016 12.2328 15.4016 13.3719C15.4016 14.5062 14.4781 15.4344 13.3391 15.4344ZM28.4516 28.4516H24.8937V22.8828C24.8937 21.5562 24.8703 19.8453 23.0422 19.8453C21.1906 19.8453 20.9094 21.2937 20.9094 22.7891V28.4516H17.3563V16.9953H20.7687V18.5609H20.8156C21.2891 17.6609 22.4516 16.7094 24.1813 16.7094C27.7859 16.7094 28.4516 19.0813 28.4516 22.1656V28.4516Z" fill="#EAEAEA"/></g><defs><clipPath id="clip0_1086_9206"><rect width="24" height="24" fill="white" transform="translate(8 8)"/></clipPath></defs></svg>}
                         header="LinkedIn"
@@ -32,7 +32,7 @@ export default function ContactFindSection(){
                     />                                                        
                 </div>
             </div>
-            <div className="w-1/2">
+            <div className="w-fit md:w-1/2">
                 <GoogleMaps />
             </div>
         </div>

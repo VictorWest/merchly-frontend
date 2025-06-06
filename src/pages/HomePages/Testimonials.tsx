@@ -62,7 +62,7 @@ export default function Testimonials(){
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="flex flex-col md:flex-row gap-5 mt-10 md:mt-20 items-start md:w-4/5 mx-auto overflow-hidden"
                 >
-                <p className="text-9xl font-extrabold hidden md:block">"</p>
+                <p className="text-9xl font-extrabold hidden md:block">&quot;</p>
                 
                 <div className="flex flex-col gap-5 mx-auto md:m-0 md:ml-10">
                     <motion.div

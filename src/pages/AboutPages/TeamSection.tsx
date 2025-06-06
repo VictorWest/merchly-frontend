@@ -19,7 +19,7 @@ export default function TeamSection(){
             <p className="md:w-3/7 text-center md:text-start text-sm md:text-base">Our great team led Merchly Io into todays achievement, resulting our big success and customer satisfaction.</p>
             <div className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-x-20 gap-y-10 mt-10">
                 {data.length !== 0 && data.map((item, index) => (
-                    <motion.div initial={{x:100}} whileInView={{x:0}} transition={{duration: .3*(index+1)}} className="flex flex-col md:flex-row gap-5 items-center text-center md:text-start">
+                    <motion.div key={item.id} initial={{x:100}} whileInView={{x:0}} transition={{duration: .3*(index+1)}} className="flex flex-col md:flex-row gap-5 items-center text-center md:text-start">
                         <Image key={item.id} className="rounded-full" src={item.imageUrl} alt={item.name} width={100} height={100} />
                         <div className="flex flex-col">
                             <h3 className="text-xl font-extrabold">{item.name}</h3>

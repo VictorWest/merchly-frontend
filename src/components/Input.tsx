@@ -19,4 +19,6 @@ const Input = forwardRef<HTMLInputElement, CustomInputProp>(({label, note, ...pr
     )
 })
 
+Input.displayName = 'Input';
+
 export default Input

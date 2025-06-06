@@ -30,7 +30,7 @@ export default function ServicesHero(){
                             <h3>We handle all the payment</h3>
                             <h3>You grow your business!</h3>
                         </div>
-                        <p className="text-sm md:text-base md:w-1/2">At Merchly Io, we're redefining the way small businesses handle transactions. Our Merchant Services are designed to simplify and enhance your payment processing experience, ensuring that your business thrives in today's dynamic market.</p>
+                        <p className="text-sm md:text-base md:w-1/2">At Merchly Io, we&apos;re redefining the way small businesses handle transactions. Our Merchant Services are designed to simplify and enhance your payment processing experience, ensuring that your business thrives in today&apos;s dynamic market.</p>
                     </div>
                     <div className="flex flex-col md:flex-row gap-5 mt-15 items-center w-fit text-black *:bg-gradient-to-b *:from-white *:to-white *:border *:border-gray-300">
                         <InfoCard

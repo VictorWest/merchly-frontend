@@ -2,7 +2,6 @@ import InfoCard from "@/components/InfoCard";
 import Image from "next/image";
 import * as motion from "motion/react-client"
 import TypingEffect from "@/components/transitions/TypingEffect";
-import SlideUp from "@/components/transitions/SlideUp";
 export default function ServicesPriority(){
     return(
         <div>
@@ -90,7 +89,7 @@ export default function ServicesPriority(){
                         header="Real Support from Real People"
                     >
                         <li>Responsive, knowledgeable team</li>
-                        <li>Ongoing assistance to help you maximize the platform's value</li>
+                        <li>Ongoing assistance to help you maximize the platform&apos;s value</li>
                     </InfoCard>
                 </div>
             </div>       

@@ -13,7 +13,7 @@ export default function ServicesFAQ(){
             className="font-bold text-[#21C963] text-sm md:text-base">Frequently Asked Questions</motion.p>
             
             <div className="md:w-2/3 mx-auto space-y-7">
-                <h2 className="text-2xl md:text-4xl font-extrabold">Explore Questions We've Already Covered</h2>
+                <h2 className="text-2xl md:text-4xl font-extrabold">Explore Questions We&apos;ve Already Covered</h2>
                 <p className="text-xs md:text-base">Still have questions? Don’t hesitate to reach out. We focus on win-win solutions, not just selling a service. That’s why we’re happy to answer your questions first—so you can decide if we’re the right fit for you.</p>
 
                 <div className="md:mt-15 space-y-7 text-xs md:text-base">

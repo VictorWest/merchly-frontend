@@ -61,7 +61,7 @@ export default function StorySection(){
                             <p className="md:w-2/3 text-xs md:text-sm">{data[page - 1].occupation}</p>
                         </div>
                     </div>
-                    <div className="mt-10 md:mt-0 text-center md:text-start md:w-1/2">"{data[page - 1].review}"</div>
+                    <div className="mt-10 md:mt-0 text-center md:text-start md:w-1/2">&quot;{data[page - 1].review}&quot;</div>
                 </div>}
             </motion.div>
             

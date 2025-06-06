@@ -4,11 +4,11 @@ import { availablePositions, Position } from "@/data/positions"
 import { useEffect, useState } from "react"
 
 export default function CareerOthers({careerData}:{careerData:Position}){
-    const [ availablePositionList,setAvailablePositionList ] = useState([...availablePositions.filter((item)=>item.id !== careerData.id)])
+    const [ availablePositionList,setAvailablePositionList ] = useState([...availablePositions.filter((item)=>item.id !== careerData?.id)])
     const [ searchInput, setSearchInput ] = useState<string>("")
 
     const handleSearchChange = () => {
-        setAvailablePositionList(() => [...availablePositions.filter((item)=>item.id !== careerData.id)].filter((item) => {
+        setAvailablePositionList(() => [...availablePositions.filter((item)=>item.id !== careerData?.id)].filter((item) => {
             return (item.title.toLowerCase().includes(searchInput) || item.keywords?.some(keyword => keyword.toLowerCase() === searchInput))
         }))
     }

@@ -24,7 +24,7 @@ export default function ContactHero() {
         <div className="bg-[url('/grid.png')] bg-cover relative p-10 md:p-20">
           <motion.div initial={{ opacity:0, x:-100 }} animate={{ opacity:1, x:0 }} transition={{duration: .5}} className="z-10 md:w-1/2 space-y-5 mt-10 py-10 md:py-0">
             <h1 className="text-4xl font-extrabold">Contact</h1>
-            <p className="text-sm md:text-base">We'd love to hear from you! Whether you have a question, need support, or want to explore, contact us.</p>
+            <p className="text-sm md:text-base">We&lsquo;d love to hear from you! Whether you have a question, need support, or want to explore, contact us.</p>
           </motion.div>
         </div>        
       </div>
@@ -33,7 +33,7 @@ export default function ContactHero() {
           <div className="md:w-1/2 flex flex-col justify-between gap-10 md:gap-0">
             <div className="space-y-7">
               <h3 className="text-2xl md:text-4xl font-bold">Get connected with our customer services</h3>
-              <p className="text-sm md:text-base">We're here to help! Whether you have questions about our services, need technical support, or just want to get in touch, we're always happy to assist you.</p>
+              <p className="text-sm md:text-base">We&lsquo;re here to help! Whether you have questions about our services, need technical support, or just want to get in touch, we&lsquo;re always happy to assist you.</p>
             </div>
             <div className="space-y-5 text-xs md:text-base">
               <ContactInfo 

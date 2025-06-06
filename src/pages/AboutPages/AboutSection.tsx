@@ -31,8 +31,8 @@ export default function AboutSection(){
                         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:.9}} className="space-y-5 mt-10 md:mt-0 text-sm md:text-base md:w-1/2 md:text-start ">
                             <p>We built a payment platform that prioritizes what truly matters, partnerships, trust, and long-term success.</p>
                             <p>Most payment processors focus on fees and features. But what about you?</p>
-                            <p>We're changing the game by putting your business first with our customized payment solutions which don’t just process transactions, but they fuel your growth and help you thrive in any market.</p>
-                            <p>We don't just power payments. We power your business.</p>
+                            <p>We&apos;re changing the game by putting your business first with our customized payment solutions which don’t just process transactions, but they fuel your growth and help you thrive in any market.</p>
+                            <p>We don&apos;t just power payments. We power your business.</p>
                         </motion.div>
                     </div>
                 </div>            

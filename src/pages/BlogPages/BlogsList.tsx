@@ -3,7 +3,6 @@ import { BlogData, blogData } from "@/data/data"
 import { useEffect, useState } from "react"
 import BlogCard from "./BlogCard"
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import { motion } from "motion/react"
 import SlideUp from "@/components/transitions/SlideUp";
 
 export default function BlogsList() {

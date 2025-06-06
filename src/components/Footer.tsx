@@ -10,7 +10,7 @@ export default function Footer(){
                 <div className="flex flex-col gap-5 text-center md:text-start">
                     <p className="text-green-500">Get in touch</p>
                     <h1 className="font-extrabold text-2xl md:text-4xl md:w-2/3">Get a Personalized Payment Process now!</h1>
-                    <p className="md:pr-15 md:w-2/3">Let's add value and develop your business with our accessible payment process service solutions.</p>
+                    <p className="md:pr-15 md:w-2/3">Let&apos;s add value and develop your business with our accessible payment process service solutions.</p>
                 </div>
                 <div className="space-y-3">
                     <ButtonComponent className="flex items-center justify-center gap-2">

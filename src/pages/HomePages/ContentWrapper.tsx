@@ -19,7 +19,7 @@ export default function ContentWrapper(){
                 <div className="flex flex-col gap-10 px-10 md:px-0 text-center md:text-start">
                     <div className="space-y-5 cursor-pointer" onClick={() => setIsClicked(1)}>
                         <h5 className="font-bold text-xl">Book a call</h5>
-                        <p>We're all about partnerships, so let's start with a quick call to understand your business needs. In addition, we will discuss the process to start.</p>
+                        <p>We&lsquo;re all about partnerships, so let&lsquo;s start with a quick call to understand your business needs. In addition, we will discuss the process to start.</p>
                         <hr style={{backgroundColor: isClicked == 1 ? 'green' : 'black', border: 'none', height: '4px'}} />
                     </div>
                     <div className="space-y-5 cursor-pointer" onClick={() => setIsClicked(2)}>
